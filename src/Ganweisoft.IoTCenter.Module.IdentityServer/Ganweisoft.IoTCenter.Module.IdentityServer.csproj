@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>$(AspNetCoreTargetFramework)</TargetFramework>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>true</AppendRuntimeIdentifierToOutputPath>
+        <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+        <SatelliteResourceLanguages>none</SatelliteResourceLanguages>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="Ganweisoft.IoTCenter.Module.IdentityServer.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="IoTCenterCore.Module.Targets"/>
+        <PackageReference Include="IoTCenterWebApi.BaseCore"/>
+    </ItemGroup>
+
+</Project>

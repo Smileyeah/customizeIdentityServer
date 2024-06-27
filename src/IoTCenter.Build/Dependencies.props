@@ -1,0 +1,10 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="Dependencies.AspNetCore.props" />
+
+  <ItemGroup>
+    <PackageManagement Include="IoTCenterCore.Module.Targets" Version="6.1.0" />
+    <PackageManagement Include="IoTCenterWebApi.BaseCore" Version="6.1.6.1"/>
+  </ItemGroup>
+
+</Project>
